@@ -902,6 +902,41 @@ gm-style-moc {
     text-align: center;
     transition: opacity ease-in-out;
 }
+.contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+}
+
+.contact .info .open-hours {
+    margin-top: 40px;
+}
+.contact .info .email {
+    margin-top: 40px;
+}
+.contact .info .phone {
+    margin-top: 40px;
+}
 /* ////////////////////////////////////////////////////////////////////
 //////////////////////////footer/////////////////////////////////
 //////////////////////////////////////////////////////////////////// */
@@ -995,6 +1030,28 @@ footer .footer-top .footer-newsletter form {
     color: #fff;
     position: relative;
     padding-bottom: 12px;
+}
+#footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #28251f;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover {
+    background: #cda45e;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-links i {
+    color: #cda45e;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>????????????????????? */
 .my-3 {
