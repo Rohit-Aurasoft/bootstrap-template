@@ -800,7 +800,6 @@ li {
 .member:hover .member-info{
     top: -335px;
     left: 0px;
-    /* background:radial-gradient(top,rgb(32, 30, 30),rgb(0, 0, 0,.5),rgba(0, 0, 0, 0.13)); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0),rgb(0, 0, 0,.3),rgb(0, 0, 0,.6),rgb(0, 0, 0,.9));
     color: #fff;
 }
