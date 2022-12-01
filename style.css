@@ -151,18 +151,14 @@ ul {
     color: #fff;
 
 }
-/* .nav-link {
-    color: rgb(250, 249, 249);
-     font-family: "Poppins", sans-serif !important; 
-     margin-right: 15px; 
-} */
+
 #nav{
-    background-color: rgba(0, 0, 0, 0.5);
+    
+    background-color: rgba(0, 0, 0,) !important;
     padding: 10px 0;
 }
-.navbar-brand {
-   /* margin-left: 70px; */
-}
+
+
 h1 {
     color: white;
 }
@@ -180,7 +176,7 @@ h1 {
     line-height: 1;
     color: white;
     border: 2px solid #cda45e;
-    margin-left: 20px;
+    margin-right: 57px;
 }
 .btn-b:hover {
     background: #cda45e;
@@ -188,19 +184,19 @@ h1 {
 }
 
 
-.Navigation li {
+.navbar li {
     padding: 1px;
     list-style: none;
     text-decoration: none;
     color: rgb(177, 142, 79);
 }
-.Navigation{
+.navbar{
     background: rgba(0, 0, 0, 0);
 }
 /* .nav-link.active{
     color: #cda45e !important;
 } */
-.container_lg {
+.navbar {
     background-color: rgba(0, 0, 0, 0.5);
     align-items: center;
     padding: 8px;
@@ -223,7 +219,24 @@ a:hover {
 .navbar-toggler{
     color: white !important;
 }
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
 
+.logo{
+    margin-left: 50px;
+}
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right:0;
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+}
 /* ......................................................... */
 
 /* .navbar-light .navbar-toggler {
@@ -366,9 +379,6 @@ li {
     padding-left: 0rem;
 }
 
-.content ul li {
-     list-style: none;
-}
 .About_section .content p {
     font-size: 18px;
 }
@@ -759,14 +769,14 @@ li {
 .Chef_section {
     padding: 60px;
     width: 100vw;
-    background-color: #000000;
+    background-color: #0c0b09;
 }
 
 .member-detail{
     color: #fff;
     position: relative;
     text-align: center;
-   bottom: -180px;
+   bottom: -210px;
     left: 0px;
     padding: 10px;
    
@@ -775,7 +785,7 @@ li {
     color: #fff;
     position: relative;
     text-align: center;
-   bottom: -180px;
+   bottom: -210px;
     left: 0px;
     padding: 10px;
 }
@@ -788,7 +798,7 @@ li {
     padding: 10px;
 }
 .member{
-    height: 335px;
+    height: 400px;
     overflow: hidden;
     margin: 10px auto;
 }
@@ -798,8 +808,9 @@ li {
 }
 
 .member:hover .member-info{
-    top: -335px;
+    top: -400px;
     left: 0px;
+    /* background:radial-gradient(top,rgb(32, 30, 30),rgb(0, 0, 0,.5),rgba(0, 0, 0, 0.13)); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.0),rgba(0, 0, 0, 0.0),rgb(0, 0, 0,.3),rgb(0, 0, 0,.6),rgb(0, 0, 0,.9));
     color: #fff;
 }
@@ -901,41 +912,6 @@ gm-style-moc {
     text-align: center;
     transition: opacity ease-in-out;
 }
-.contact .info i {
-    font-size: 20px;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #cda45e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
-.contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 5px;
-    font-family: "Poppins", sans-serif;
-}
-.contact .info p {
-    padding: 0 0 0 60px;
-    margin-bottom: 0;
-    font-size: 14px;
-    color: #bab3a6;
-}
-
-.contact .info .open-hours {
-    margin-top: 40px;
-}
-.contact .info .email {
-    margin-top: 40px;
-}
-.contact .info .phone {
-    margin-top: 40px;
-}
 /* ////////////////////////////////////////////////////////////////////
 //////////////////////////footer/////////////////////////////////
 //////////////////////////////////////////////////////////////////// */
@@ -1030,28 +1006,6 @@ footer .footer-top .footer-newsletter form {
     position: relative;
     padding-bottom: 12px;
 }
-#footer .footer-top .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #28251f;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-}
-#footer .footer-top .social-links a:hover {
-    background: #cda45e;
-    color: #fff;
-    text-decoration: none;
-}
-.footer-links i {
-    color: #cda45e;
-}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>????????????????????? */
 .my-3 {
     display: none;
@@ -1063,6 +1017,18 @@ p {
 }
 
 @media screen and (max-width:600px) {
+    .navbar-collapse{
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+.book{
+    display: none;
+}
+    
     .Testimonial-section{
         padding: 10px;
     }
